@@ -1,0 +1,8 @@
+
+as_book.default_controller_testDrupal:
+  path: '/book/test'
+  defaults:
+    _controller: '\Drupal\as_book\Controller\DefaultController::testDrupal'
+    _title: 'Test Drupal'
+  requirements:
+    _permission: 'access content'

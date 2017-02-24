@@ -1,0 +1,10 @@
+{% set books = elements.books %}
+
+<div id="book-listing-wrapper">
+    {% for index, book in books %}
+        <div class="row-{{ index }} book-{{ book['#node'].id }}">
+            {{ book }}
+        </div>
+    {% endfor %}
+
+</div>

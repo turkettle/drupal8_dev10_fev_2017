@@ -1,0 +1,7 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      libraries/global_styling/css/style.css: { media: 'all and (min-width: 768px)' }
+  js:
+    libraries/global_styling/js/main.js: {}

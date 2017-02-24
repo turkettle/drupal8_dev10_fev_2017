@@ -1,0 +1,5 @@
+name: Livres
+type: module
+description: Fonctionnalité des livres de la bibliothèque.
+core: 8.x
+package: Aston
