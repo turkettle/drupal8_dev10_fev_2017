@@ -1,0 +1,14 @@
+uuid: ea95aac7-a11c-42f8-a875-e715eba902a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.librarian
+  module:
+    - user
+id: user_remove_role_action.librarian
+label: 'Remove the Bibliothécaire role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: librarian

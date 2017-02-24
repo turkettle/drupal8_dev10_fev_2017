@@ -1,0 +1,27 @@
+uuid: 7dc64ccd-1e71-4617-bf93-b6dbfcf9d149
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_cv
+  module:
+    - file
+id: contact_message.personal.field_cv
+field_name: field_cv
+entity_type: contact_message
+bundle: personal
+label: CV
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,9 @@
+uuid: 944f65fa-da8a-4347-bdb2-4e663a040d46
+langcode: en
+status: true
+dependencies: {  }
+name: 'Genre de livre'
+vid: genre
+description: ''
+hierarchy: 0
+weight: 0

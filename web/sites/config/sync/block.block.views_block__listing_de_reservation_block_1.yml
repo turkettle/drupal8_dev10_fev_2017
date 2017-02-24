@@ -1,0 +1,40 @@
+uuid: b1551c35-893b-4b28-9257-e5224eb71ac6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.listing_de_reservation
+  module:
+    - node
+    - user
+    - views
+  theme:
+    - bootstrap
+id: views_block__listing_de_reservation_block_1
+theme: bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:listing_de_reservation-block_1'
+settings:
+  id: 'views_block:listing_de_reservation-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      book: book
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,38 @@
+uuid: a0c83454-1e8f-49c9-a61f-4d3b28f3f8cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.book
+  module:
+    - image
+id: node.book.field_image
+field_name: field_image
+entity_type: node
+bundle: book
+label: Couverture
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: node.book.field_image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '4 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: 02854e0e-4cce-468c-acf5-ad8c53b9fcd5
+    alt: ''
+    title: ''
+    width: 80
+    height: 80
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

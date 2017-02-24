@@ -1,0 +1,26 @@
+uuid: c7a6202c-049c-4a8d-8065-f90ca1132f85
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reservation.body
+    - node.type.reservation
+  module:
+    - text
+    - user
+id: node.reservation.teaser
+targetEntityType: node
+bundle: reservation
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

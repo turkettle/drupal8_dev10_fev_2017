@@ -1,0 +1,43 @@
+uuid: de23dffb-35c8-4f36-b49e-0c24b6c323c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_cv
+  module:
+    - file
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  copy:
+    weight: 50
+  field_cv:
+    weight: 51
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  mail:
+    weight: -40
+  message:
+    type: string_textarea
+    weight: 0
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: -50
+  preview:
+    weight: 40
+  subject:
+    type: string_textfield
+    weight: -10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

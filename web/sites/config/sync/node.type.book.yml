@@ -1,0 +1,18 @@
+uuid: f5e3a84f-bb5f-49da-a816-62e8c9f17365
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Livre
+type: book
+description: 'Contenu métier spécifique à l''application des livres.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

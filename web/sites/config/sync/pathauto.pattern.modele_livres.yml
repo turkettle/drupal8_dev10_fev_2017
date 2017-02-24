@@ -1,0 +1,22 @@
+uuid: 369cfa04-9627-4853-bf53-36cc6f676ee6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: modele_livres
+label: 'Modèle Livres'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  6c8eb4dc-a734-4586-86db-479ca8790aaf:
+    id: node_type
+    bundles:
+      book: book
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6c8eb4dc-a734-4586-86db-479ca8790aaf
+selection_logic: and
+weight: -5
+relationships: {  }

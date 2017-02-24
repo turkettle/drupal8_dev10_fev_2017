@@ -1,0 +1,28 @@
+uuid: 0a2fe71d-5418-48ab-8701-3aabed280d52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.book
+    - taxonomy.vocabulary.author
+id: node.book.field_author
+field_name: field_author
+entity_type: node
+bundle: book
+label: Auteur
+description: 'Enter a comma-separated list. For example: Gotlib, Victor Hugo, Stephen King'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      author: author
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: author
+field_type: entity_reference

@@ -1,0 +1,16 @@
+uuid: 6ea9e334-b895-47d0-bba1-49b7afa1c4f9
+langcode: en
+status: true
+dependencies: {  }
+id: librarian
+label: Bibliothécaire
+weight: -8
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'access content overview'
+  - 'view own unpublished content'
+  - 'create book content'
+  - 'delete any book content'
+  - 'edit any book content'
+  - 'view the administration theme'
